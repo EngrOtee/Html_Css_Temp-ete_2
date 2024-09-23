@@ -10,41 +10,71 @@
 html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     font-family: 'Open Sans', sans-serif;
+    background-color: black;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.container{
+
+.container {
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* Small Screens */
 @media (min-width: 768px) {
     .container {
         width: 750px;
     }
 }
+
 /* Medium Screens */
 @media (min-width: 992px) {
     .container {
         width: 970px;
     }
 }
+
 /* Large Screens */
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
     }
 }
-/* End Global Rules */
 
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/si3aa/Html_Css_Temp-ete_2.git
-git push -u origin main
+/* End Global Rules */
+/* Start Header Section */
+header{
+
+}
+header .container{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ position: relative;
+}
+
+header .container::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    width: calc(100% - 30px);
+    bottom: 0;
+    left: 15px;
+}
+
+header.logo img{
+    height: 40px;
+}
+header nav{
+    flex: 1;
+  
+}
+/* End Header Section */
